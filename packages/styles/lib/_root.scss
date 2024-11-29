@@ -1,0 +1,34 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+:root {
+  // Colors
+  @include register-vars($blue-grays, 'blue-gray');
+  @include register-vars($turquoises, 'turquoise');
+  @include register-vars($blues, 'blue');
+  @include register-vars($greens, 'green');
+  @include register-vars($yellows, 'yellow');
+  @include register-vars($purples, 'purple');
+  @include register-vars($reds, 'red');
+  @include register-vars($neutrals, 'neutral');
+
+  // Breakpoints
+  @include register-vars($breakpoints, 'breakpoint');
+
+  // Borders
+  @include register-vars($border-radiuses, 'border-radius');
+  @include register-vars($border-widths, 'border-width');
+
+  // Typography
+  @include register-vars($font-families, 'font-family');
+  @include register-vars($font-sizes, 'font-size');
+  @include register-vars($font-weights, 'font-weight');
+  @include register-vars($line-heights, 'line-height');
+  @include register-vars($letter-spacings, 'letter-spacing');
+
+  // Spacing
+  @include register-vars($spaces, 'space');
+
+  // Shadows
+  @include register-vars($box-shadows, 'box-shadow');
+}
