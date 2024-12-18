@@ -1,6 +1,8 @@
 {
-  "name": "root",
-  "private": false,
+  "name": "s2s-packages",
+  "publishConfig": {
+    "access": "public"
+  },
   "workspaces": [
     "packages/*",
     "packages/components/*"
