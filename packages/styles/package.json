@@ -1,11 +1,11 @@
 {
   "name": "@s2s-packages/styles",
-  "version": "1.0.0",
-  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "version": "0.0.1",
+  "description": "This package consists of different styles that are used in components.",
   "keywords": [],
   "author": "Mav-Ivan <110425368+Mav-Ivan@users.noreply.github.com>",
   "license": "ISC",
-  "main": "lib/styles.js",
+  "main": "lib/styles.scss",
   "directories": {
     "lib": "lib",
     "test": "__tests__"

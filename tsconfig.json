@@ -1,9 +1,10 @@
 {
     "compilerOptions": {
-      "target": "ES5",
+      "target": "ES2019",
       "module": "ESNext",
       "jsx": "react-jsx",
       "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
       "esModuleInterop": true,
       "strict": true,
       "skipLibCheck": true,
@@ -14,6 +15,11 @@
       "baseUrl": ".",
       "paths": {
         "utils": ["packages/utils/lib"]
+      }
+    },
+    "ts-node": {
+      "compilerOptions": {
+        "module": "CommonJS"
       }
     },
     "include": [

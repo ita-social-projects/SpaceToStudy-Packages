@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 
-import Button from "../lib/Button";
+import Button from "../lib/Button/Button";
 
 const buttonText = "Button";
 
