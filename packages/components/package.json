@@ -2,7 +2,13 @@
   "name": "@s2s-packages/components",
   "version": "0.0.1",
   "description": "This package provides reusable UI components, enabling developers to share and manage components efficiently across projects.",
-  "keywords": ["ui", "components", "react", "scss", "typescript"],
+  "keywords": [
+    "ui",
+    "components",
+    "react",
+    "scss",
+    "typescript"
+  ],
   "author": "Mav-Ivan <110425368+Mav-Ivan@users.noreply.github.com>",
   "license": "ISC",
   "main": "lib/components.ts",
@@ -30,8 +36,8 @@
     "utils": "file:../utils"
   },
   "peerDependencies": {
-    "@emotion/styled": "^11.10.6",
     "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
