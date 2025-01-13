@@ -6,7 +6,7 @@ import {
   ButtonProps as MuiButtonProps
 } from '@mui/material'
 
-import { cn } from 'utils'
+import { cn } from '@s2s-packages/utils'
 
 import './Button.scss'
 

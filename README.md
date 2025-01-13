@@ -40,7 +40,7 @@ This monorepo manages multiple packages (components, utils, and styles) using Le
 
 2. **Install dependencies**
 
-    npm install
+   npm install
 
 ## Adding a new package
 
@@ -51,3 +51,10 @@ This monorepo manages multiple packages (components, utils, and styles) using Le
     cd packages/<package-name>
     npm install <dependency-name>
 
+## Testing components locally in another repo
+
+    cd packages/components
+    npm link
+
+    cd another/repo
+    npm link <components>

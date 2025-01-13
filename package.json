@@ -8,7 +8,7 @@
     "packages/components/*"
   ],
   "devDependencies": {
-    "@types/node": "^22.10.2",
+    "@types/node": "^22.10.5",
     "@types/webpack": "^5.28.5",
     "css-loader": "^7.1.2",
     "lerna": "^8.1.9",
@@ -22,6 +22,7 @@
   },
   "scripts": {
     "build:dev": "webpack --env mode=development",
-    "build:prod": "webpack --env mode=production"
+    "build:prod": "webpack --env mode=production",
+    "build": "webpack --env mode=production --stats detailed"
   }
 }

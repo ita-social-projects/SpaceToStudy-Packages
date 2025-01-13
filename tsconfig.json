@@ -9,8 +9,8 @@
       "strict": true,
       "skipLibCheck": true,
       "declaration": true,
-      "declarationDir": "dist/types",
-      "outDir": "dist",
+      "declarationDir": "packages/components/types",
+      "outDir": "packages/components/dist",
       "allowJs": true,
       "baseUrl": ".",
       "paths": {
@@ -23,9 +23,9 @@
       }
     },
     "include": [
-      "packages/components/**/*",
+      "packages/components/lib/**/*",
       "packages/utils/**/*"
-    ],
+    ],    
     "exclude": [
       "node_modules"
     ]

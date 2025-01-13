@@ -11,21 +11,37 @@ export default (env: Env) => {
     entry: "./packages/components/lib/components.ts",
     optimization: {
       usedExports: true,
-    },  
+    },
     output: {
-      filename: "main.js",
-      path: path.resolve(__dirname, "dist"),
-      library: "beta",
-      libraryTarget: "umd",
-      globalObject: "self",
+      filename: "components.esm.js",
+      path: path.resolve("packages/components/dist"),
+      library: {
+        type: "module",
+      },
       clean: true,
+    },
+    externals: {
+      react: "react",
+      "react-dom": "react-dom",
+    },
+    experiments: {
+      outputModule: true,
     },
     module: {
       rules: [
         { test: /\.tsx?$/, use: "ts-loader", exclude: /node_modules/ },
         {
           test: /\.scss$/,
-          use: ["style-loader", "css-loader", "sass-loader"],
+          use: [
+            "style-loader",
+            {
+              loader: "css-loader",
+              options: {
+                modules: true,
+              },
+            },
+            "sass-loader",
+          ],
         },
       ],
     },
