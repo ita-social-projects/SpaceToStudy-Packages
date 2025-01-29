@@ -1,6 +1,6 @@
 {
   "name": "@s2s-packages/components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This package provides reusable UI components, enabling developers to share and manage components efficiently across projects.",
   "keywords": [
     "ui",
@@ -34,8 +34,8 @@
   },
   "dependencies": {
     "@mui/material": "^6.1.9",
-    "@s2s-packages/styles": "0.0.1",
-    "@s2s-packages/utils": "0.0.1"
+    "@s2s-packages/styles": "^0.0.2",
+    "@s2s-packages/utils": "^0.0.2"
   },
   "peerDependencies": {
     "@emotion/react": "^11.10.6",
