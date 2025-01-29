@@ -1,6 +1,10 @@
 {
   "name": "@s2s-packages/components",
   "version": "0.0.2",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "This package provides reusable UI components, enabling developers to share and manage components efficiently across projects.",
   "keywords": [
     "ui",
@@ -43,5 +47,5 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
-  "gitHead": "e2d23e2a76d2baed0503bf63959db73ca077f52f"
+  "gitHead": "e47b088008c74572046501dca6df416b934eabd8"
 }

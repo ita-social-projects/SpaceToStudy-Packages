@@ -1,6 +1,10 @@
 {
   "name": "@s2s-packages/utils",
   "version": "0.0.2",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "This package contains utility functions used across various components.",
   "keywords": [],
   "author": "Mav-Ivan <110425368+Mav-Ivan@users.noreply.github.com>",
@@ -26,5 +30,6 @@
   "homepage": "https://github.com/ita-social-projects/SpaceToStudy-Packages#readme",
   "dependencies": {
     "typescript": "^5.7.2"
-  }
+  },
+  "gitHead": "e47b088008c74572046501dca6df416b934eabd8"
 }
