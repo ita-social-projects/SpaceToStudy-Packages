@@ -1,5 +1,5 @@
 {
-  "name": "s2s-packages",
+  "name": "space2study-packages",
   "publishConfig": {
     "access": "public"
   },
@@ -23,6 +23,9 @@
   "scripts": {
     "build:dev": "webpack --env mode=development",
     "build:prod": "webpack --env mode=production",
-    "build": "webpack --env mode=production --stats detailed"
+    "build": "webpack --env mode=production --stats detailed",
+    "publish:major": "npx lerna version major",
+    "publish:minor": "npx lerna version minor",
+    "publish:patch": "npx lerna version patch"
   }
 }

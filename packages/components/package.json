@@ -1,5 +1,5 @@
 {
-  "name": "@s2s-packages/components",
+  "name": "@space2study-packages/components",
   "version": "0.0.2",
   "private": false,
   "publishConfig": {
@@ -15,7 +15,6 @@
   ],
   "author": "Mav-Ivan <110425368+Mav-Ivan@users.noreply.github.com>",
   "license": "ISC",
-  "main": "dist/components.js",
   "module": "dist/components.esm.js",
   "types": "types/components/lib/components.d.ts",
   "sideEffects": true,
@@ -24,7 +23,8 @@
     "test": "__tests__"
   },
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
   "repository": {
     "type": "git",
