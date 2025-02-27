@@ -129,4 +129,4 @@ out
 .pnp.*
 
 *storybook.log
-dist/
+packages/components/dist
