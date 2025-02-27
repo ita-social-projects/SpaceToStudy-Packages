@@ -8,11 +8,21 @@
     "packages/components/*"
   ],
   "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.4",
+    "@storybook/addon-essentials": "^8.6.0",
+    "@storybook/addon-interactions": "^8.6.0",
+    "@storybook/addon-onboarding": "^8.6.0",
+    "@storybook/addon-webpack5-compiler-swc": "^2.1.0",
+    "@storybook/blocks": "^8.6.0",
+    "@storybook/react": "^8.6.0",
+    "@storybook/react-webpack5": "^8.6.0",
+    "@storybook/test": "^8.6.0",
     "@types/node": "^22.10.5",
     "@types/webpack": "^5.28.5",
     "css-loader": "^7.1.2",
     "lerna": "^8.1.9",
     "sass-loader": "^16.0.4",
+    "storybook": "^8.6.0",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.1",
     "ts-node": "^10.9.2",
@@ -26,6 +36,8 @@
     "build": "webpack --env mode=production --stats detailed",
     "publish:major": "npx lerna version major",
     "publish:minor": "npx lerna version minor",
-    "publish:patch": "npx lerna version patch"
+    "publish:patch": "npx lerna version patch",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   }
 }

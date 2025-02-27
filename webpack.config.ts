@@ -37,7 +37,10 @@ export default (env: Env) => {
             {
               loader: "css-loader",
               options: {
-                modules: true,
+                modules: {
+                  auto: (resourcePath: string) =>
+                    resourcePath.endsWith(".module.scss"),
+                },
               },
             },
             "sass-loader",
