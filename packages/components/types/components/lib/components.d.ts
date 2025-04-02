@@ -1,2 +1,3 @@
 import Button from "./Button/Button";
-export { Button };
+import Alert from "./Alert/Alert";
+export { Button, Alert };
