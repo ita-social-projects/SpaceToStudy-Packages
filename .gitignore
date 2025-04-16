@@ -130,3 +130,6 @@ out
 
 *storybook.log
 packages/components/dist
+
+# Vitest coverage
+/tests-config/coverage

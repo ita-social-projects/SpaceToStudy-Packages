@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-
+import React from "react";
 import Button from "../lib/Button/Button";
 
 const buttonText = "Button";
@@ -7,7 +7,6 @@ const buttonText = "Button";
 describe("Button test", () => {
   it("should render button text", () => {
     render(<Button>{buttonText}</Button>);
-    console.log("go1");
     const text = screen.getByText(buttonText);
     expect(text).toBeInTheDocument();
   });
