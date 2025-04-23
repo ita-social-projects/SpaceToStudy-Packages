@@ -1,5 +1,6 @@
 import React from 'react';
 import { AvatarProps as MuiAvatarProps } from '@mui/material';
+import "./UserAvatar.scss";
 declare const variants: readonly ["check", "avatar", "monogram", "photo"];
 declare const sizes: readonly ["sm", "md", "lg", "profile-lg"];
 interface BaseUserAvatarProps {
