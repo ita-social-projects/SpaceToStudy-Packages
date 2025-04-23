@@ -98,7 +98,7 @@ export const All: Story = {
         <div style={{ display: 'flex', gap: '30px' }}>
             <UserAvatar
                 {...args}
-                src='/src/assets/img/user-profile-page/avatar.png'
+                src='/UserAvatar/avatar.png'
                 variant='photo'
             />
             <UserAvatar {...args} variant='monogram' />
@@ -128,7 +128,7 @@ export const PhotoVariant: Story = {
     },
     args: {
         variant: 'photo',
-        src: '/src/assets/img/user-profile-page/avatar.png'
+        src: '/UserAvatar/avatar.png'
     }
 }
 
@@ -170,6 +170,7 @@ export const AvatarVariant: Story = {
         }
     },
     args: {
+        isOnline: true,
         variant: 'avatar'
     }
 }

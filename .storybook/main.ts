@@ -33,5 +33,6 @@ const config: StorybookConfig = {
 
     return config;
   },
+  staticDirs: ['../packages/components/assets'],
 };
 export default config;

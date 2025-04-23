@@ -5,6 +5,7 @@ import {
 } from '@mui/material'
 import CheckIcon from '@mui/icons-material/Check'
 import { cn } from '@s2s-packages/utils'
+import "./UserAvatar.scss"
 
 const variants = ['check', 'avatar', 'monogram', 'photo'] as const
 const sizes = ['sm', 'md', 'lg', 'profile-lg'] as const
