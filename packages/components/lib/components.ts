@@ -5,4 +5,3 @@ import UserAvatar from "./UserAvatar/UserAvatar";
 import MenuItem from "./MenuItem/MenuItem";
 import { MenuItemColorVariant, MenuItemVariant } from "./MenuItem/MenuItem.constants";
 export { Button, Alert, IconButton, UserAvatar, MenuItem, MenuItemColorVariant, MenuItemVariant };
-

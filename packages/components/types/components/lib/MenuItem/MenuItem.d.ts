@@ -1,20 +1,14 @@
-import React, { type ReactNode } from 'react';
-import { MenuItemColorVariant, MenuItemVariant } from "./MenuItem.constants";
+import React  from 'react';
+import { MenuItemVariant } from "./MenuItem.constants";
 import './MenuItem.scss';
-interface MenuItemProps {
-    title: string;
-    additionalInfo?: string;
-    alignVariant?: 'left' | 'center' | 'right';
-    colorVariant?: MenuItemColorVariant;
-    isDisabled?: boolean;
-    graphics?: ReactNode;
-    isBottomBorder?: boolean;
-    onClick?: () => void;
-    isDropdown?: boolean;
-    density?: 1 | 2;
-    isToggled?: boolean;
-    onRemove?: () => void;
-    variant?: MenuItemVariant;
+
+import {MenuItemProps as CommonMenuItemProps} from "./MenuItem.types";
+interface MenuItemProps extends CommonMenuItemProps {
+    isDropdown?: boolean
+    density?: 1 | 2
+    isToggled?: boolean
+    onRemove?: () => void
+    variant?: MenuItemVariant
 }
-declare const MenuItem: React.ForwardRefExoticComponent<MenuItemProps & React.RefAttributes<HTMLLIElement>>;
+declare const MenuItem: React.ForwardRefExoticComponent<Omit<MenuItemProps, "ref"> & React.RefAttributes<HTMLElement>>;
 export default MenuItem;

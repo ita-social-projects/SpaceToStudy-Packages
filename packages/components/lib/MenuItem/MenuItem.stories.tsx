@@ -4,7 +4,10 @@ import { Checkbox } from '@mui/material'
 import { EditRounded } from '@mui/icons-material'
 
 import MenuItem from './MenuItem'
-import {MenuItemColorVariant, MenuItemVariant} from "./MenuItem.constants";
+import {
+    MenuItemColorVariant,
+    MenuItemVariant
+} from './MenuItem.constants'
 
 const meta: Meta<typeof MenuItem> = {
     title: 'Components/MenuItem',
