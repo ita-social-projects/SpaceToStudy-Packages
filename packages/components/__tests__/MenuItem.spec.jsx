@@ -1,6 +1,6 @@
 import { render, fireEvent, screen } from '@testing-library/react'
 import { vi } from 'vitest'
-import MenuItem from '~scss-components/menu-item/MenuItem'
+import MenuItem from '../lib/MenuItem/MenuItem'
 
 const resourceMenuItemTitle = 'Lesson'
 

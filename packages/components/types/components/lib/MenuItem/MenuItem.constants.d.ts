@@ -1,10 +1,9 @@
-export enum MenuItemColorVariant {
-    Default = 'default',
-    Danger = 'danger',
-    Secondary = 'secondary'
+export declare enum MenuItemColorVariant {
+    Default = "default",
+    Danger = "danger",
+    Secondary = "secondary"
 }
-
-export enum MenuItemVariant {
-    Default = 'default',
-    Nested = 'nested'
+export declare enum MenuItemVariant {
+    Default = "default",
+    Nested = "nested"
 }
