@@ -1,10 +1,10 @@
 import { render, screen } from '@testing-library/react'
-import { vi } from 'vitest'
-import UserAvatar from '~scss-components/user-avatar/UserAvatar'
+import UserAvatar from '../lib/UserAvatar/UserAvatar'
+import React from "react";
 
 const firstName = 'John'
 const lastName = 'Doe'
-const avatarSrc = '/src/assets/img/user-profile-page/avatar.png'
+const avatarSrc = './assets/UserAvatar/avatar.png'
 const isOnline = true
 
 describe('UserAvatar Component', () => {
@@ -22,6 +22,20 @@ describe('UserAvatar Component', () => {
             firstName.charAt(0) + lastName.charAt(0)
         )
         expect(monogramElement).toBeInTheDocument()
+    })
+
+    it('should render with check variant', () => {
+        render(
+            <UserAvatar
+                firstName={firstName}
+                isOnline={isOnline}
+                lastName={lastName}
+                variant='check'
+            />
+        )
+
+        const checkIcon = screen.getByTestId('CheckIcon')
+        expect(checkIcon).toBeInTheDocument()
     })
 
     it('should show online status indicator when isOnline is true', () => {
