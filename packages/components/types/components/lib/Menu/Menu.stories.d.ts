@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { type Meta, type StoryObj } from '@storybook/react';
 import Menu from './Menu';
 declare const meta: Meta<typeof Menu>;
 export default meta;

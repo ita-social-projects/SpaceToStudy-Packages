@@ -126,7 +126,7 @@ Nested menu items can have all the same properties except \`nestedMenuItems\`.
 
             return (
                 <>
-                    <Button color='tonal' onClick={handleClick}>
+                    <Button color='primary' onClick={handleClick}>
                         Open Menu
                     </Button>
 
