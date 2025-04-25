@@ -1,0 +1,15 @@
+import type { Meta, StoryObj } from '@storybook/react';
+import Menu from './Menu';
+declare const meta: Meta<typeof Menu>;
+export default meta;
+type Story = StoryObj<typeof Menu>;
+export declare const Default: Story;
+export declare const WithIcon: Story;
+export declare const WithCheckbox: Story;
+export declare const Mixed: Story;
+export declare const WithAdditionalInfo: Story;
+export declare const WithNestedMenuItems: Story;
+export declare const CustomAnchorOrigin: Story;
+export declare const CustomTransformOrigin: Story;
+export declare const RemovableItems: Story;
+export declare const WithCustomToggling: Story;
