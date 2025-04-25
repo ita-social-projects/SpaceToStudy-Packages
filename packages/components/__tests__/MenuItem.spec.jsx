@@ -1,6 +1,6 @@
 import { render, fireEvent, screen } from '@testing-library/react'
-import { vi } from 'vitest'
 import MenuItem from '../lib/MenuItem/MenuItem'
+import React from "react";
 
 const resourceMenuItemTitle = 'Lesson'
 
@@ -65,5 +65,29 @@ describe('MenuItem Component', () => {
             <MenuItem additionalInfo={additionalInfo} title={resourceMenuItemTitle} />
         )
         expect(screen.getByText(additionalInfo)).toBeInTheDocument()
+    })
+
+    test('should apply toggled class when isToggled is true', () => {
+        const { container } = render(
+            <MenuItem isToggled title={resourceMenuItemTitle} />
+        )
+        const item = container.querySelector('.s2s-item')
+        expect(item).toHaveClass('s2s-item--toggled')
+    })
+
+    test('should apply bottom border class when isBottomBorder is true', () => {
+        const { container } = render(
+            <MenuItem isBottomBorder title={resourceMenuItemTitle} />
+        )
+        const item = container.querySelector('.s2s-item')
+        expect(item).toHaveClass('s2s-item--bottom-border')
+    })
+
+    test('should apply disabled class when isDisabled is true', () => {
+        const { container } = render(
+            <MenuItem isDisabled title={resourceMenuItemTitle} />
+        )
+        const item = container.querySelector('.s2s-item')
+        expect(item).toHaveClass('s2s-item--disabled')
     })
 })
