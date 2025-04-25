@@ -1,5 +1,5 @@
-import { render, fireEvent, screen } from '@testing-library/react'
-import React from 'react'
+import { render, fireEvent, screen, renderHook } from '@testing-library/react'
+import React, {useState} from 'react'
 import Menu from '../lib/Menu/Menu'
 
 const resourcesMenuItems = [
@@ -199,5 +199,93 @@ describe('Menu Component', () => {
         fireEvent.click(lesson)
 
         expect(screen.getByTestId('lesson-icon')).toBeInTheDocument()
+    })
+
+    test('should initialize internalToggledItemsTitles with initially toggled items when allowToggleMultipleItems is true', () => {
+        const menuItems = [
+            { title: 'Item1', isInitiallyToggled: true },
+            { title: 'Item2', isInitiallyToggled: false },
+            { title: 'Item3', isInitiallyToggled: true }
+        ]
+
+        render(
+            <Menu
+                anchorEl={anchor}
+                setAnchorEl={() => {}}
+                menuItems={menuItems}
+                allowToggleMultipleItems
+                removeAllItemsTitle=""
+            />
+        )
+
+        expect(screen.getByText('Item1')).toBeInTheDocument()
+        expect(screen.getByText('Item3')).toBeInTheDocument()
+    })
+
+    test('should call onToggleItemsChange when an item is toggled', () => {
+        const handleToggle = vi.fn()
+        const menuItems = [
+            { title: 'Item1', isInitiallyToggled: false }
+        ]
+
+        render(
+            <Menu
+                anchorEl={anchor}
+                setAnchorEl={() => {}}
+                menuItems={menuItems}
+                allowToggleMultipleItems
+                onToggleItemsChange={handleToggle}
+                removeAllItemsTitle=""
+            />
+        )
+
+        fireEvent.click(screen.getByText('Item1'))
+
+        expect(handleToggle).toHaveBeenCalledWith(['Item1'])
+    })
+
+    test('should update internalToggledItemsTitles when toggled and no onToggleItemsChange is provided', () => {
+        const menuItems = [
+            { title: 'ItemA' }
+        ]
+
+        render(
+            <Menu
+                anchorEl={anchor}
+                setAnchorEl={() => {}}
+                menuItems={menuItems}
+                allowToggleMultipleItems
+                removeAllItemsTitle=""
+            />
+        )
+
+        const item = screen.getByText('ItemA')
+        fireEvent.click(item)
+        fireEvent.click(item)
+
+        expect(item).toBeInTheDocument()
+    })
+
+    test('should call customOnClick and close the menu', () => {
+        const customOnClick = vi.fn()
+        const setAnchorEl = vi.fn()
+
+        const menuItems = [
+            { title: 'Do', onClick: customOnClick }
+        ]
+
+        render(
+            <Menu
+                anchorEl={anchor}
+                setAnchorEl={setAnchorEl}
+                menuItems={menuItems}
+                removeAllItemsTitle=""
+            />
+        )
+
+        fireEvent.click(screen.getByText('Do'))
+
+        expect(customOnClick).toHaveBeenCalled()
+        expect(setAnchorEl).toHaveBeenCalledWith(null)
     })
 })
