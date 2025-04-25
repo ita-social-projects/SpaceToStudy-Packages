@@ -26,6 +26,20 @@ const resourcesMenuItemsWithIcon = [{ title: 'Lesson', graphics: lessonIcon }]
 
 const noItemsCustomMessage = 'No items available.'
 
+const internalToggledMenuItems = [
+    { title: 'Item1', isInitiallyToggled: true },
+    { title: 'Item2', isInitiallyToggled: false },
+    { title: 'Item3', isInitiallyToggled: true }
+]
+
+const onToggleItemsChangeItems = [
+    { title: 'Item1', isInitiallyToggled: false }
+]
+
+const menuItem = [
+    { title: 'ItemA' }
+]
+
 describe('Menu Component', () => {
     let anchor
 
@@ -202,17 +216,11 @@ describe('Menu Component', () => {
     })
 
     test('should initialize internalToggledItemsTitles with initially toggled items when allowToggleMultipleItems is true', () => {
-        const menuItems = [
-            { title: 'Item1', isInitiallyToggled: true },
-            { title: 'Item2', isInitiallyToggled: false },
-            { title: 'Item3', isInitiallyToggled: true }
-        ]
-
         render(
             <Menu
                 anchorEl={anchor}
                 setAnchorEl={() => {}}
-                menuItems={menuItems}
+                menuItems={internalToggledMenuItems}
                 allowToggleMultipleItems
                 removeAllItemsTitle=""
             />
@@ -224,15 +232,12 @@ describe('Menu Component', () => {
 
     test('should call onToggleItemsChange when an item is toggled', () => {
         const handleToggle = vi.fn()
-        const menuItems = [
-            { title: 'Item1', isInitiallyToggled: false }
-        ]
 
         render(
             <Menu
                 anchorEl={anchor}
                 setAnchorEl={() => {}}
-                menuItems={menuItems}
+                menuItems={onToggleItemsChangeItems}
                 allowToggleMultipleItems
                 onToggleItemsChange={handleToggle}
                 removeAllItemsTitle=""
@@ -245,15 +250,11 @@ describe('Menu Component', () => {
     })
 
     test('should update internalToggledItemsTitles when toggled and no onToggleItemsChange is provided', () => {
-        const menuItems = [
-            { title: 'ItemA' }
-        ]
-
         render(
             <Menu
                 anchorEl={anchor}
                 setAnchorEl={() => {}}
-                menuItems={menuItems}
+                menuItems={menuItem}
                 allowToggleMultipleItems
                 removeAllItemsTitle=""
             />
