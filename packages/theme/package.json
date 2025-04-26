@@ -1,0 +1,42 @@
+{
+  "name": "@space2study-packages/theme",
+  "version": "0.0.1",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Reusable theme configuration for Space2Study projects, including colors, typography, and spacing.",
+  "keywords": [
+    "theme",
+    "design-system",
+    "styles",
+    "typescript"
+  ],
+  "author": "Mav-Ivan <110425368+Mav-Ivan@users.noreply.github.com>",
+  "license": "ISC",
+  "module": "dist/theme.esm.js",
+  "types": "types/theme/theme.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ita-social-projects/SpaceToStudy-Packages.git"
+  },
+  "scripts": {
+    "build": "tsc && cp app-theme/index.scss dist/index.css"
+  },
+  "bugs": {
+    "url": "https://github.com/ita-social-projects/SpaceToStudy-Packages/issues"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "rollup": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.34.0"
+  }
+}
