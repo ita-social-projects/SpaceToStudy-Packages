@@ -13,5 +13,3 @@ export * from "./Custom-animations/custom-animations"
 export * from "./Custom-scrollbar/custom-scrollbar"
 export * from "./Custom-shadows/custom-shadows"
 export * from "./custom-mui.styles"
-
-import "./index.scss"

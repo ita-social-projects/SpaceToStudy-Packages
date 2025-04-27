@@ -2,14 +2,18 @@
   "compilerOptions": {
     "outDir": "./dist",
     "declaration": true,
-    "declarationMap": true,
+    "declarationMap": false,
+    "sourceMap": false,
     "emitDeclarationOnly": false,
     "module": "ESNext",
-    "target": "ESNext",
+    "target": "ES2019",
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "strict": true
   },
-  "include": ["./app-theme/**/*"]
+  "include": ["./lib/**/*"],
+  "exclude": [
+    "node_modules"
+  ]
 }
