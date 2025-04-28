@@ -6414,15 +6414,14 @@ var palette2 = {
     900: "#1E5F23"
   }
 };
-var app_pallete_default = palette2;
 
 // lib/Checkbox/app.checkbox.ts
 var checkbox = {
   styleOverrides: {
     root: {
-      color: app_pallete_default.primary[300],
+      color: palette2.primary[300],
       [`&.${checkboxClasses_default.checked}`]: {
-        color: app_pallete_default.primary[700]
+        color: palette2.primary[700]
       }
     }
   }
@@ -6432,7 +6431,7 @@ var checkbox = {
 var menuItem = {
   styleOverrides: {
     root: {
-      "&:hover": { backgroundColor: app_pallete_default.primary[50] }
+      "&:hover": { backgroundColor: palette2.primary[50] }
     }
   }
 };
@@ -6470,13 +6469,13 @@ var menuList = {
 var svgIcon = {
   styleOverrides: {
     colorPrimary: {
-      color: app_pallete_default.primary[900]
+      color: palette2.primary[900]
     },
     colorSecondary: {
-      color: app_pallete_default.primary[700]
+      color: palette2.primary[700]
     },
     colorDisabled: {
-      color: app_pallete_default.primary[100]
+      color: palette2.primary[100]
     }
   }
 };
@@ -6486,7 +6485,7 @@ var table = {
   styleOverrides: {
     root: {
       "&.MuiTableRow-hover:hover": {
-        backgroundColor: app_pallete_default.basic.grey
+        backgroundColor: palette2.basic.grey
       },
       "& .MuiTableCell-root": {
         borderBottom: "none"
@@ -6538,12 +6537,12 @@ var textField = {
       "& label": {
         lineHeight: "inherit",
         "&.Mui-focused": {
-          color: app_pallete_default.primary[900]
+          color: palette2.primary[900]
         },
         "&.Mui-error": {
-          color: app_pallete_default.error[500]
+          color: palette2.error[500]
         },
-        color: app_pallete_default.primary[500]
+        color: palette2.primary[500]
       },
       "& .MuiAutocomplete-inputRoot.MuiOutlinedInput-root ": {
         padding: "5px"
@@ -6554,19 +6553,19 @@ var textField = {
           padding: 0
         },
         "& fieldset": {
-          borderColor: app_pallete_default.primary[500]
+          borderColor: palette2.primary[500]
         },
         "&.Mui-focused ": {
           "&.Mui-error fieldset": {
-            borderColor: app_pallete_default.error[500]
+            borderColor: palette2.error[500]
           },
           "& fieldset": {
-            borderColor: app_pallete_default.primary[900]
+            borderColor: palette2.primary[900]
           }
         }
       },
       "& .MuiInput-root:before ": {
-        borderColor: app_pallete_default.primary[500]
+        borderColor: palette2.primary[500]
       }
     }
   }
@@ -6576,12 +6575,12 @@ var textField = {
 var tooltip = {
   styleOverrides: {
     tooltip: {
-      backgroundColor: app_pallete_default.primary[900],
+      backgroundColor: palette2.primary[900],
       fontSize: "11px",
       padding: "4px 8px"
     },
     arrow: {
-      color: app_pallete_default.primary[900]
+      color: palette2.primary[900]
     }
   }
 };
@@ -6720,9 +6719,9 @@ var SlidesLeftLong = keyframes`
   }
 `;
 var colorChange = keyframes`
-    0% { color: ${app_pallete_default.success[300]}; }
-    50% { color: ${app_pallete_default.success[500]}; }
-    100% { color: ${app_pallete_default.success[300]}; }
+    0% { color: ${palette2.success[300]}; }
+    50% { color: ${palette2.success[500]}; }
+    100% { color: ${palette2.success[300]}; }
 `;
 var fadeAnimation = {
   animation: `${fade} 0.5s ease-in`
@@ -6742,7 +6741,7 @@ var colorChangeAnimation = {
 
 // lib/custom-mui.styles.ts
 var theme = createTheme2({
-  palette: app_pallete_default,
+  palette: palette2,
   typography: app_typography_default,
   components: {
     MuiSvgIcon: svgIcon,
@@ -6768,6 +6767,7 @@ export {
   mainShadow,
   menuItem,
   menuList,
+  palette2 as palette,
   scrollbar,
   select,
   slidesLeft,

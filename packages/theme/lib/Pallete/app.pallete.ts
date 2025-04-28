@@ -1,6 +1,6 @@
 import { blueGrey } from '@mui/material/colors'
 
-const palette = {
+export const palette = {
   primary: blueGrey,
   backgroundColor: '#F7F7F7',
   imageOverlay: 'rgba(38, 50, 56, 0.7)',
@@ -76,6 +76,8 @@ const palette = {
     800: '#2C7C32',
     900: '#1E5F23'
   }
-}
+} as const;
 
-export default palette
+export type Palette = typeof palette;
+
+// export default palette

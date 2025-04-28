@@ -1,5 +1,5 @@
 import { keyframes } from '@mui/system'
-import palette from '../Pallete/app.pallete'
+import {palette} from '../Pallete/app.pallete'
 
 export const fade = keyframes`
   from {
