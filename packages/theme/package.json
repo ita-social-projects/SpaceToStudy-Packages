@@ -24,8 +24,7 @@
     "url": "git+https://github.com/ita-social-projects/SpaceToStudy-Packages.git"
   },
   "scripts": {
-    "build": "tsup lib/theme.ts --format esm --dts && cp lib/index.scss dist/index.scss",
-    "build1": "tsc && cp lib/index.scss dist/index.css"
+    "build": "tsup lib/theme.ts --format esm --dts && cp lib/index.scss dist/index.scss"
   },
   "bugs": {
     "url": "https://github.com/ita-social-projects/SpaceToStudy-Packages/issues"

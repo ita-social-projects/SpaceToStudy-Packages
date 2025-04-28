@@ -1,6 +1,5 @@
 import { createTheme } from '@mui/material/styles'
-
-import {palette} from './Pallete/app.pallete'
+import { palette } from './Pallete/app.pallete'
 import appTypography from './Typography/app.typography'
 import './Button/app.button'
 import tooltip from './Tooltip/app.tooltip'

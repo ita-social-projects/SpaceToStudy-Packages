@@ -1,4 +1,4 @@
-import {palette} from '../Pallete/app.pallete'
+import { palette } from '../Pallete/app.pallete'
 
 const table = {
   styleOverrides: {

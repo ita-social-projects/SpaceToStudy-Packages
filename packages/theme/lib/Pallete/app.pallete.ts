@@ -79,5 +79,3 @@ export const palette = {
 } as const;
 
 export type Palette = typeof palette;
-
-// export default palette
