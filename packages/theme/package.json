@@ -18,7 +18,9 @@
   "types": "dist/theme.d.mts",
   "style": "dist/index.scss",
   "sideEffects": true,
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ita-social-projects/SpaceToStudy-Packages.git"
@@ -33,5 +35,8 @@
   "peerDependencies": {
     "react": "^18.3.1"
   },
-  "gitHead": "e47b088008c74572046501dca6df416b934eabd8"
+  "gitHead": "e47b088008c74572046501dca6df416b934eabd8",
+  "devDependencies": {
+    "tsup": "^8.4.0"
+  }
 }
