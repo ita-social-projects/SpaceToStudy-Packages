@@ -64,10 +64,10 @@ $sizes: (
 @mixin root-mixin($width, $height) {
   display: flex;
   align-items: center;
-  width: #{$width}px;
-  height: #{$height}px;
-  overflow: visible;
-  padding: 0;
+  width: #{$width}px !important;
+  height: #{$height}px !important;
+  overflow: visible !important;
+  padding: 0 !important;
   margin: 5px;
 }
 
