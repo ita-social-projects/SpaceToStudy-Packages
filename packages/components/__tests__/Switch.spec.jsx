@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import Switch from "../lib/Switch/Switch";
 import React from "react";
-import { beforeEach } from "node:test";
+
 describe("Switch", () => {
   const props = {
     labelPosition: "start",
