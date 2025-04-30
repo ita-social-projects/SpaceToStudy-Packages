@@ -20,7 +20,7 @@ const Switch = forwardRef<HTMLDivElement, AppSwitchProps>(
   (
     {
       labelPosition = "end",
-      size = "sm",
+      size = "md",
       label = "",
       loading,
       disabled,
