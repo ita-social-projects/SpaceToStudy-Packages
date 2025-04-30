@@ -1,0 +1,24 @@
+{
+  "name": "@s2s-packages/eslint-config",
+  "version": "0.0.2",
+  "description": "Shared ESLint configuration for S2S projects, including frontend and backend rules.",
+  "author": "Mike-Popovych <volt250719888@gmail.com>",
+  "homepage": "https://github.com/ita-social-projects/SpaceToStudy-Packages#readme",
+  "license": "ISC",
+  "main": "lib/eslint-config.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ita-social-projects/SpaceToStudy-Packages.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:check": "eslint . --ext .js,.ts,.tsx,.jsx",
+    "prepublishOnly": "npm run lint"
+  },
+  "bugs": {
+    "url": "https://github.com/ita-social-projects/SpaceToStudy-Packages/issues"
+  }
+}
