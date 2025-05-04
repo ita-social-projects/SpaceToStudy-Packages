@@ -9,4 +9,6 @@ import Badge from "./Badge/Badge";
 import Chip from "./Chip/Chip";
 import InputField from "./InputField/InputField";
 
-export { Button, Alert, IconButton, UserAvatar, MenuItem, Menu, MenuItemColorVariant, MenuItemVariant, Badge, Chip, InputField };
+import { InputFieldVariantEnum } from "./InputField/InputField.constants";
+
+export { Button, Alert, IconButton, UserAvatar, MenuItem, Menu, MenuItemColorVariant, MenuItemVariant, Badge, Chip, InputField, InputFieldVariantEnum };

@@ -1,8 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react'
 import React, { useState } from 'react'
 import InputField from '../lib/InputField/InputField'
-import { InputFieldVariantEnum } from "../lib/InputField/InputField.constants"; 
-import { vi } from "vitest";
+
 
 const placeholderText = 'Placeholder'
 const helperText = 'Helper text'
