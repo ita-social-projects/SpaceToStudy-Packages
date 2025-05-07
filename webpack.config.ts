@@ -23,6 +23,9 @@ export default (env: Env) => {
     externals: {
       react: "react",
       "react-dom": "react-dom",
+      "@mui/material": "@mui/material",
+      "@mui/system": "@mui/system",
+      "@mui/icons-material": "@mui/icons-material",
     },
     experiments: {
       outputModule: true,
