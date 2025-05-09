@@ -129,7 +129,8 @@ out
 .pnp.*
 
 *storybook.log
-packages/components/dist
+packages/components/dist/
+packages/theme/dist/
 
 # Vitest coverage
 /tests-config/coverage

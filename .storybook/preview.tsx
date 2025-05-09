@@ -5,7 +5,7 @@ import { ThemeProvider } from '@mui/material/styles'
 import { theme } from "@space2study-packages/theme";
 
 import '@s2s-packages/styles'
-import '@space2study-packages/theme/dist/index.scss'
+import '@space2study-packages/theme/lib/index.scss'
 
 const preview: Preview = {
   parameters: {
