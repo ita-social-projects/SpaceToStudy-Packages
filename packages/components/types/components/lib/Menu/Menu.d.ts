@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { PopoverOrigin } from '@mui/material';
-import { MenuItemProps as CommonMenuItemProps, OnItemClickArgs } from '../MenuItem/MenuItem.types';
 import './Menu.scss';
-interface NestedMenuItemProps extends CommonMenuItemProps {
+type OnItemClickArgs = Record<string, string | Event>;
+declare const colorVariant: readonly ["default", "danger", "secondary"];
+interface NestedMenuItemProps {
+    title: string;
+    additionalInfo?: string;
+    alignVariant?: 'left' | 'center' | 'right';
+    colorVariant?: (typeof colorVariant)[number];
+    density?: 1 | 2;
+    isDisabled?: boolean;
+    graphics?: ReactNode;
+    isBottomBorder?: boolean;
+    onClick?: () => void;
     defaultOnItemClickArgs?: OnItemClickArgs;
     isInitiallyToggled?: boolean;
 }

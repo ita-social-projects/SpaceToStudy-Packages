@@ -63,7 +63,7 @@ Nested menu items can have all the same properties except \`nestedMenuItems\`.
         },
         density: {
             description: 'The density of the menu items.',
-            control: { type: 'radio' }
+            control: { type: 'number' }
         },
         defaultOnItemClick: {
             description: 'The default function to call when a menu item is clicked.'

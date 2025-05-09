@@ -1,20 +1,25 @@
-import React, { forwardRef, useState } from 'react'
+import React, {forwardRef, ReactNode, useState} from 'react'
 import { Menu as MuiMenu, PopoverOrigin } from '@mui/material'
-import {
-    MenuItemProps as CommonMenuItemProps,
-    OnItemClickArgs
-} from '../MenuItem/MenuItem.types'
 import MenuItem from '../MenuItem/MenuItem'
-import {
-    MenuItemColorVariant,
-    MenuItemVariant
-} from '../MenuItem/MenuItem.constants'
 import './Menu.scss'
 
 const dafaultRemoveAllItemsTitle = 'Clear all'
 const defaultNoItemsMessage = 'No items.'
 
-interface NestedMenuItemProps extends CommonMenuItemProps {
+type OnItemClickArgs = Record<string, string | Event>
+
+const colorVariant = ['default', 'danger', 'secondary'] as const
+
+interface NestedMenuItemProps {
+    title: string
+    additionalInfo?: string
+    alignVariant?: 'left' | 'center' | 'right'
+    colorVariant?: (typeof colorVariant)[number]
+    density?: 1 | 2
+    isDisabled?: boolean
+    graphics?: ReactNode
+    isBottomBorder?: boolean
+    onClick?: () => void
     defaultOnItemClickArgs?: OnItemClickArgs
     isInitiallyToggled?: boolean
 }
@@ -159,7 +164,7 @@ const Menu = forwardRef<HTMLDivElement, MenuProps>(
                 {items.flatMap((item) => [
                     <MenuItem
                         {...item}
-                        density={density}
+                        density={item.density}
                         isDropdown={Boolean(item.nestedMenuItems)}
                         isToggled={toggledItemsTitles.includes(item.title)}
                         key={item.title}
@@ -177,7 +182,7 @@ const Menu = forwardRef<HTMLDivElement, MenuProps>(
                                 density={1}
                                 key={nestedMenuItem.title}
                                 onClick={() => handleItemClick(nestedMenuItem)}
-                                variant={MenuItemVariant.Nested}
+                                variant={"nested"}
                             />
                         ))
                         : [])
@@ -186,7 +191,7 @@ const Menu = forwardRef<HTMLDivElement, MenuProps>(
                     (items.length >= 1 ? (
                         <MenuItem
                             alignVariant='center'
-                            colorVariant={MenuItemColorVariant.Secondary}
+                            colorVariant={"secondary"}
                             onClick={() => setItems([])}
                             title={removeAllItemsTitle}
                         />
