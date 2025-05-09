@@ -4,10 +4,6 @@ import { Checkbox } from '@mui/material'
 import { EditRounded } from '@mui/icons-material'
 
 import MenuItem from './MenuItem'
-import {
-    MenuItemColorVariant,
-    MenuItemVariant
-} from './MenuItem.constants'
 
 const meta: Meta<typeof MenuItem> = {
     title: 'Components/MenuItem',
@@ -107,12 +103,12 @@ The MenuItem component can be used in a dropdown menu, a list of items.
         onClick: () => alert('Item was clicked.'),
         density: 1,
         alignVariant: 'left',
-        colorVariant: MenuItemColorVariant.Default,
+        colorVariant: 'default',
         isDropdown: false,
         isToggled: false,
         isBottomBorder: false,
         isDisabled: false,
-        variant: MenuItemVariant.Default
+        variant: 'default'
     }
 }
 
@@ -167,7 +163,7 @@ export const All: Story = {
                 title="Assignment"
                 graphics={<EditRounded />}
                 alignVariant="center"
-                colorVariant={MenuItemColorVariant.Secondary}
+                colorVariant={'secondary'}
                 onClick={() => alert('Item "Colored Menu Item" was clicked.')}
             />
         </div>
@@ -284,7 +280,7 @@ export const SecondaryColorAndCentered: Story = {
         title: 'Assigment',
         graphics: <EditRounded />,
         alignVariant: 'center',
-        colorVariant: MenuItemColorVariant.Secondary,
+        colorVariant: 'secondary',
         onClick: () => alert('Item "Colored Menu Item" was clicked.')
     }
 }
