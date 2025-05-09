@@ -1,17 +1,26 @@
-import React, { forwardRef } from 'react'
+import React, {forwardRef, type ReactNode} from 'react'
 import { MenuItem as MuiMenuItem } from '@mui/material'
 import { ArrowDropDown, ArrowDropUp, CloseRounded } from '@mui/icons-material'
-import { MenuItemProps as CommonMenuItemProps } from './MenuItem.types'
-import { MenuItemColorVariant, MenuItemVariant } from './MenuItem.constants'
 import { cn } from '@s2s-packages/utils'
 import './MenuItem.scss'
 
-interface MenuItemProps extends CommonMenuItemProps {
+const variant = ['default', 'nested'] as const
+const colorVariant = ['default', 'danger', 'secondary'] as const
+
+interface MenuItemProps {
+    title: string
+    additionalInfo?: string
+    alignVariant?: 'left' | 'center' | 'right'
+    colorVariant?: (typeof colorVariant)[number]
+    isDisabled?: boolean
+    graphics?: ReactNode
+    isBottomBorder?: boolean
+    onClick?: () => void
     isDropdown?: boolean
     density?: 1 | 2
     isToggled?: boolean
     onRemove?: () => void
-    variant?: MenuItemVariant
+    variant?: (typeof variant)[number]
 }
 
 const MenuItem = forwardRef<HTMLLIElement, MenuItemProps>(
@@ -20,7 +29,7 @@ const MenuItem = forwardRef<HTMLLIElement, MenuItemProps>(
             title,
             additionalInfo,
             alignVariant = 'left',
-            colorVariant = MenuItemColorVariant.Default,
+            colorVariant = 'default',
             density = 1,
             graphics,
             isDropdown,
@@ -29,7 +38,7 @@ const MenuItem = forwardRef<HTMLLIElement, MenuItemProps>(
             isDisabled,
             onClick,
             onRemove,
-            variant = MenuItemVariant.Default
+            variant = 'default'
         },
         ref
     ) => {

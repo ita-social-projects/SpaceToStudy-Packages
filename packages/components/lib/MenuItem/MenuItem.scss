@@ -31,13 +31,10 @@
     height: 48px !important;
   }
 
-  &--density-2 {
+  &--density-2  {
+    font-weight: $font-weight-medium !important;
     height: 64px !important;
     padding-top: 30px !important;
-  }
-
-  &--density-2 &-title {
-    font-weight: $font-weight-medium !important;
   }
 
   &--density-2 &-additional-info {
