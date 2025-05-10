@@ -1,11 +1,11 @@
 import React, { type ReactNode } from 'react';
-import { variant, colorVariant } from './MenuItem.constants';
+import { MenuItemVariant, MenuItemColorVariant } from './MenuItem.constants';
 import './MenuItem.scss';
 interface MenuItemProps {
     title: string;
     additionalInfo?: string;
     alignVariant?: 'left' | 'center' | 'right';
-    colorVariant?: (typeof colorVariant)[number];
+    colorVariant?: MenuItemColorVariant;
     isDisabled?: boolean;
     graphics?: ReactNode;
     isBottomBorder?: boolean;
@@ -14,7 +14,7 @@ interface MenuItemProps {
     density?: 1 | 2;
     isToggled?: boolean;
     onRemove?: () => void;
-    variant?: (typeof variant)[number];
+    variant?: MenuItemVariant;
 }
 
 declare const MenuItem: React.ForwardRefExoticComponent<MenuItemProps & React.RefAttributes<HTMLLIElement>>;

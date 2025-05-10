@@ -1,13 +1,13 @@
 import React, { ReactNode } from 'react';
 import { PopoverOrigin } from '@mui/material';
-import { colorVariant } from '../MenuItem/MenuItem.constants';
+import { MenuItemColorVariant } from '../MenuItem/MenuItem.constants';
 import './Menu.scss';
 type OnItemClickArgs = Record<string, string | Event>;
 interface NestedMenuItemProps {
     title: string;
     additionalInfo?: string;
     alignVariant?: 'left' | 'center' | 'right';
-    colorVariant?: (typeof colorVariant)[number];
+    colorVariant?: MenuItemColorVariant;
     density?: 1 | 2;
     isDisabled?: boolean;
     graphics?: ReactNode;

@@ -1,7 +1,7 @@
 import React, {forwardRef, ReactNode, useState} from 'react'
-import { Menu as MuiMenu, PopoverOrigin } from '@mui/material'
+import {Menu as MuiMenu, PopoverOrigin} from '@mui/material'
 import MenuItem from '../MenuItem/MenuItem'
-import { colorVariant } from '../MenuItem/MenuItem.constants'
+import {MenuItemColorVariant, MenuItemVariant} from '../MenuItem/MenuItem.constants'
 import './Menu.scss'
 
 const dafaultRemoveAllItemsTitle = 'Clear all'
@@ -13,7 +13,7 @@ interface NestedMenuItemProps {
     title: string
     additionalInfo?: string
     alignVariant?: 'left' | 'center' | 'right'
-    colorVariant?: (typeof colorVariant)[number]
+    colorVariant?: MenuItemColorVariant
     density?: 1 | 2
     isDisabled?: boolean
     graphics?: ReactNode
@@ -181,7 +181,7 @@ const Menu = forwardRef<HTMLDivElement, MenuProps>(
                                 density={1}
                                 key={nestedMenuItem.title}
                                 onClick={() => handleItemClick(nestedMenuItem)}
-                                variant={"nested"}
+                                variant={MenuItemVariant.Nested}
                             />
                         ))
                         : [])
@@ -190,7 +190,7 @@ const Menu = forwardRef<HTMLDivElement, MenuProps>(
                     (items.length >= 1 ? (
                         <MenuItem
                             alignVariant='center'
-                            colorVariant={"secondary"}
+                            colorVariant={MenuItemColorVariant.Secondary}
                             onClick={() => setItems([])}
                             title={removeAllItemsTitle}
                         />

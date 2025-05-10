@@ -1,9 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type {Meta, StoryObj} from '@storybook/react'
 import React from 'react'
-import { Checkbox } from '@mui/material'
-import { EditRounded } from '@mui/icons-material'
+import {Checkbox} from '@mui/material'
+import {EditRounded} from '@mui/icons-material'
 
 import MenuItem from './MenuItem'
+import {MenuItemColorVariant, MenuItemVariant} from "./MenuItem.constants";
 
 const meta: Meta<typeof MenuItem> = {
     title: 'Components/MenuItem',
@@ -103,12 +104,12 @@ The MenuItem component can be used in a dropdown menu, a list of items.
         onClick: () => alert('Item was clicked.'),
         density: 1,
         alignVariant: 'left',
-        colorVariant: 'default',
+        colorVariant: MenuItemColorVariant.Default,
         isDropdown: false,
         isToggled: false,
         isBottomBorder: false,
         isDisabled: false,
-        variant: 'default'
+        variant: MenuItemVariant.Default
     }
 }
 
@@ -163,7 +164,7 @@ export const All: Story = {
                 title="Assignment"
                 graphics={<EditRounded />}
                 alignVariant="center"
-                colorVariant={'secondary'}
+                colorVariant={MenuItemColorVariant.Secondary}
                 onClick={() => alert('Item "Colored Menu Item" was clicked.')}
             />
         </div>
@@ -280,7 +281,7 @@ export const SecondaryColorAndCentered: Story = {
         title: 'Assigment',
         graphics: <EditRounded />,
         alignVariant: 'center',
-        colorVariant: 'secondary',
+        colorVariant: MenuItemColorVariant.Secondary,
         onClick: () => alert('Item "Colored Menu Item" was clicked.')
     }
 }
