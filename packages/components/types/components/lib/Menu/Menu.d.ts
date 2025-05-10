@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 import { PopoverOrigin } from '@mui/material';
+import { colorVariant } from '../MenuItem/MenuItem.constants';
 import './Menu.scss';
 type OnItemClickArgs = Record<string, string | Event>;
-declare const colorVariant: readonly ["default", "danger", "secondary"];
 interface NestedMenuItemProps {
     title: string;
     additionalInfo?: string;

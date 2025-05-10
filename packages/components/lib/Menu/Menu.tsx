@@ -1,14 +1,13 @@
 import React, {forwardRef, ReactNode, useState} from 'react'
 import { Menu as MuiMenu, PopoverOrigin } from '@mui/material'
 import MenuItem from '../MenuItem/MenuItem'
+import { colorVariant } from '../MenuItem/MenuItem.constants'
 import './Menu.scss'
 
 const dafaultRemoveAllItemsTitle = 'Clear all'
 const defaultNoItemsMessage = 'No items.'
 
 type OnItemClickArgs = Record<string, string | Event>
-
-const colorVariant = ['default', 'danger', 'secondary'] as const
 
 interface NestedMenuItemProps {
     title: string

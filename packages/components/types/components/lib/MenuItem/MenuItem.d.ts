@@ -1,7 +1,6 @@
 import React, { type ReactNode } from 'react';
+import { variant, colorVariant } from './MenuItem.constants';
 import './MenuItem.scss';
-declare const variant: readonly ["default", "nested"];
-declare const colorVariant: readonly ["default", "danger", "secondary"];
 interface MenuItemProps {
     title: string;
     additionalInfo?: string;
