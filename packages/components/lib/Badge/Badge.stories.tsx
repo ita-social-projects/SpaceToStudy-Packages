@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import Badge from './Badge'
-// import { IconButton } from '~/design-system/components/icon-button/IconButton'
+import IconButton from '../IconButton/IconButton'
 import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded'
-
+import React from 'react'
 
 const meta: Meta<typeof Badge> = {
   title: 'Components/Badge',

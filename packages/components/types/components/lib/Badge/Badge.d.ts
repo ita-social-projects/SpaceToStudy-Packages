@@ -15,6 +15,5 @@ type LargeBadgeProps = {
     isVisible?: boolean
     isZeroShown?: boolean
 }
-export type BadgeProps = (LargeBadgeProps | SmallBadgeProps) & Omit<MuiBadgeProps, 'variant'>
-declare const Badge: React.ForwardRefExoticComponent<Omit<BadgeProps, "ref"> & React.RefAttributes<HTMLDivElement>>;
+declare const Badge: React.ForwardRefExoticComponent<(Omit<SmallBadgeProps & Omit<MuiBadgeProps, "variant">, "ref"> | Omit<LargeBadgeProps & Omit<MuiBadgeProps, "variant">, "ref">) & React.RefAttributes<HTMLDivElement>>;
 export default Badge;

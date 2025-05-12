@@ -1,5 +1,5 @@
 import { NotificationsActiveRounded } from '@mui/icons-material'
-// import { IconButton } from '~/design-system/components/icon-button/IconButton'
+import IconButton from '../lib/IconButton/IconButton'
 import { screen, render } from '@testing-library/react'
 import Badge from '../lib/Badge/Badge'
 
