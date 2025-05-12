@@ -1,5 +1,5 @@
 import React, { type ReactNode } from 'react';
-import { MenuItemColorVariant, MenuItemVariant } from "./MenuItem.constants";
+import { MenuItemVariant, MenuItemColorVariant } from './MenuItem.constants';
 import './MenuItem.scss';
 interface MenuItemProps {
     title: string;
@@ -16,5 +16,6 @@ interface MenuItemProps {
     onRemove?: () => void;
     variant?: MenuItemVariant;
 }
+
 declare const MenuItem: React.ForwardRefExoticComponent<MenuItemProps & React.RefAttributes<HTMLLIElement>>;
 export default MenuItem;

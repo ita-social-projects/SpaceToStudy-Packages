@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type {Meta, StoryObj} from '@storybook/react'
 import React from 'react'
-import { Checkbox } from '@mui/material'
-import { EditRounded } from '@mui/icons-material'
+import {Checkbox} from '@mui/material'
+import {EditRounded} from '@mui/icons-material'
 
 import MenuItem from './MenuItem'
 import {MenuItemColorVariant, MenuItemVariant} from "./MenuItem.constants";

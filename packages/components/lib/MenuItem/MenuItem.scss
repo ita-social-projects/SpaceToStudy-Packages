@@ -32,16 +32,21 @@
     justify-content: start;
   }
 
+  &--align-left {
+    justify-content: start;
+  }
+
   &--density-1 {
     height: 48px;
   }
 
   &--density-2  {
-    font-weight: $font-weight-medium;
     height: 48px;
+    font-weight: $font-weight-medium;
   }
 
   &--density-2 &__title {
+
     font-weight: $font-weight-medium;
   }
 
