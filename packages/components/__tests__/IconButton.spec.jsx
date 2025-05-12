@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { IconButton } from '../lib/IconButton/IconButton'
+import IconButton from '../lib/IconButton/IconButton'
 import { IconButtonVariant } from '../lib/IconButton/IconButton'
 import { vi } from 'vitest'
 

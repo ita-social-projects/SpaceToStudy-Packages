@@ -70,7 +70,12 @@ const IconButton = forwardRef<HTMLButtonElement, S2SIconButtonProps>(
 
     const buttonContent = loading
       ? loader
-      : children ?? <AddRoundedIcon className={classNamesContainerIcon} />;
+      : children ?? (
+          <AddRoundedIcon
+            className={classNamesContainerIcon}
+            data-testid="AddRoundedIcon"
+          />
+        );
 
     return (
       <MuiIconButton
