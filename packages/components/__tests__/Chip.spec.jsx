@@ -1,8 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react'
-import { expect, vi } from 'vitest'
 import React from "react"
 
-import Chip from '~/design-system/components/chip/Chip'
+import Chip from '../lib/Chip/Chip'
 
 describe('Chip', () => {
   it('should render chip with correct classes', () => {

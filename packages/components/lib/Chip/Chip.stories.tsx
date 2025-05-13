@@ -3,7 +3,6 @@ import { fn } from '@storybook/test'
 import Chip from '../Chip/Chip'
 import React from 'react'
 import { type ComponentProps, useState } from 'react'
-import '../Chip/Chip.scss'
 
 const meta: Meta<typeof Chip> = {
   title: 'Components/Chip',

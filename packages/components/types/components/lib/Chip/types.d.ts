@@ -42,4 +42,3 @@ type BaseChipProps = CommonChipProps<ChipType> & {
 };
 type ChipProps = FilterChipProps | InputChipProps | CategoryChipProps | StateChipProps;
 export { type BaseChipProps, type CategoryChipProps, type ChipContentProps, type ChipProps, type FilterChipProps, type InputChipProps, type StateChipProps, type ChipColor };
-export declare function cn(...args: unknown[]): string;

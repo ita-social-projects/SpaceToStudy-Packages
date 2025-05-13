@@ -3,7 +3,7 @@ import CloseRoundedIcon from '@mui/icons-material/CloseRounded'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import { type CSSProperties, forwardRef, useCallback, useState } from 'react'
 
-import { cn } from './types'
+import { cn } from '@s2s-packages/utils'
 
 import {
   type BaseChipProps,
