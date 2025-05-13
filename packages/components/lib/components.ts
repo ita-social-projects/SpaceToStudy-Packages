@@ -7,5 +7,7 @@ import Menu from "./Menu/Menu";
 import { MenuItemColorVariant, MenuItemVariant } from "./MenuItem/MenuItem.constants";
 import Badge from "./Badge/Badge";
 import Chip from "./Chip/Chip";
+import InputField from "./InputField/InputField";
+import { InputFieldVariantEnum } from "./InputField/InputField.constants";
 
-export { Button, Alert, IconButton, UserAvatar, MenuItem, Menu, MenuItemColorVariant, MenuItemVariant, Badge, Chip };
+export { Button, Alert, IconButton, UserAvatar, MenuItem, Menu, MenuItemColorVariant, MenuItemVariant, Badge, Chip, InputField, InputFieldVariantEnum };
