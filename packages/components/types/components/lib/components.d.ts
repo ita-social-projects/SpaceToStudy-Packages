@@ -6,4 +6,6 @@ import MenuItem from "./MenuItem/MenuItem";
 import Menu from "./Menu/Menu";
 import { MenuItemColorVariant, MenuItemVariant } from "./MenuItem/MenuItem.constants";
 import Badge from "./Badge/Badge";
-export { Button, Alert, IconButton, UserAvatar, MenuItem, Menu, MenuItemColorVariant, MenuItemVariant, Badge };
+import Chip from "./Chip/Chip";
+
+export { Button, Alert, IconButton, UserAvatar, MenuItem, Menu, MenuItemColorVariant, MenuItemVariant, Badge, Chip };
