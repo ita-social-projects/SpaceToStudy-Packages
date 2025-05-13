@@ -2,6 +2,7 @@ import { NotificationsActiveRounded } from '@mui/icons-material'
 import IconButton from '../lib/IconButton/IconButton'
 import { screen, render } from '@testing-library/react'
 import Badge from '../lib/Badge/Badge'
+import React from 'react'
 
 describe('Badge Component', () => {
   it('it should be rendered with "dot" variant when "sm" is passed', () => {
