@@ -1,0 +1,10 @@
+import { Meta, StoryObj } from '@storybook/react';
+import UserAvatar from './UserAvatar';
+declare const meta: Meta<typeof UserAvatar>;
+export default meta;
+type Story = StoryObj<typeof meta>;
+export declare const All: Story;
+export declare const PhotoVariant: Story;
+export declare const MonogramVariant: Story;
+export declare const CheckVariant: Story;
+export declare const AvatarVariant: Story;
