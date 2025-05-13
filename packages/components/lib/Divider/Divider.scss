@@ -1,0 +1,40 @@
+@use "@s2s-packages/styles" as *;
+
+.#{$prefix}divider-vertical {
+    height: 90px;
+}
+
+.#{$prefix}divider-md {
+    background-color: $neutral-450;
+}
+
+.#{$prefix}divider {
+    width: 100%;
+    min-width: 200px;
+
+    &-ellipse {
+        border-radius: 50%;
+
+        &-sm {
+            background-color: $neutral-250;
+        }
+
+        &-md {
+            background-color: $neutral-450;
+        }
+
+        &-lg {
+            background-color: $neutral-450;
+        }
+
+        &-small {
+            width: 8px;
+            height: 8px;
+        }
+
+        &-large {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}

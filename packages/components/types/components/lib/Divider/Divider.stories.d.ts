@@ -1,0 +1,10 @@
+import { Meta, StoryObj } from "@storybook/react";
+import DividerComponent from "./Divider";
+declare const meta: Meta<typeof DividerComponent>;
+export default meta;
+type Story = StoryObj<typeof meta>;
+export declare const LinearDivider: Story;
+export declare const LinearDividerThick: Story;
+export declare const EllipseDividerSmall: Story;
+export declare const EllipseDividerBig: Story;
+export declare const VerticalDivider: Story;

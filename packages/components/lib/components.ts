@@ -9,5 +9,6 @@ import Badge from "./Badge/Badge";
 import Chip from "./Chip/Chip";
 import InputField from "./InputField/InputField";
 import { InputFieldVariantEnum } from "./InputField/InputField.constants";
+import DividerComponent from "./Divider/Divider";
 
-export { Button, Alert, IconButton, UserAvatar, MenuItem, Menu, MenuItemColorVariant, MenuItemVariant, Badge, Chip, InputField, InputFieldVariantEnum };
+export { Button, Alert, DividerComponent, IconButton, UserAvatar, MenuItem, Menu, MenuItemColorVariant, MenuItemVariant, Badge, Chip, InputField, InputFieldVariantEnum };
