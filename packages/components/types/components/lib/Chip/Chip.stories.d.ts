@@ -1,8 +1,6 @@
 import type { Meta } from '@storybook/react';
 import Chip from '../Chip/Chip';
 import { type ComponentProps } from 'react';
-import '../Chip/Chip.scss';
-
 declare const meta: Meta<typeof Chip>;
 export default meta;
 type ChipProps = ComponentProps<typeof Chip>;

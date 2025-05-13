@@ -12,7 +12,7 @@ import {
   type CategoryChipProps,
   type FilterChipProps,
   type StateChipProps
-} from './types'
+} from './Chip.types'
 import React from 'react'
 import './Chip.scss'
 

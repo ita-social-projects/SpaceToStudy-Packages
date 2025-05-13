@@ -5,7 +5,7 @@ import {
   InputChip,
   StateChip
 } from './ChipInternalComponent'
-import { type ChipProps } from './types'
+import { type ChipProps } from './Chip.types'
 import React from 'react'
 
 const Chip = forwardRef<HTMLDivElement, ChipProps>((props, reference) => {
@@ -36,4 +36,4 @@ Chip.displayName = 'Chip'
 
 export default Chip
 
-export { type ChipColor } from './types'
+export { type ChipColor } from './Chip.types'

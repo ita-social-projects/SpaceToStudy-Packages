@@ -39,7 +39,7 @@ declare const CategoryChip: React.ForwardRefExoticComponent<{
 } & {
     label: string;
 } & {
-    color?: import("./types").ChipColor;
+    color?: import("./Chip.types").ChipColor;
     detail: string;
 } & React.RefAttributes<HTMLDivElement>>;
 declare const StateChip: React.ForwardRefExoticComponent<{
@@ -52,6 +52,6 @@ declare const StateChip: React.ForwardRefExoticComponent<{
     endIcon?: React.ReactNode;
     startIcon?: React.ReactNode;
 }, "startIcon"> & {
-    color?: import("./types").ChipColor;
+    color?: import("./Chip.types").ChipColor;
 } & React.RefAttributes<HTMLDivElement>>;
 export { CategoryChip, FilterChip, InputChip, StateChip };
