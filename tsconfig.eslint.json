@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "packages",
+    "webpack.config.ts",
+    "vitest.config.ts",
+    "eslint.config.mjs",
+    "tests-config/**/*",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/dist/**",
+    "coverage",
+    "tests/coverage",
+    ".storybook",
+    "build",
+    "public"
+  ]
+}
