@@ -46,7 +46,8 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.0"
   },
   "gitHead": "e47b088008c74572046501dca6df416b934eabd8"
 }
