@@ -66,6 +66,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "vitest run --coverage",
-    "lint:check": "eslint . --ext .js,.ts,.tsx,.jsx"
+    "lint:check": "eslint . --ext .js,.ts,.tsx,.jsx",
+    "lint:fix": "eslint . --ext .js,.ts,.tsx,.jsx --fix"
   }
 }

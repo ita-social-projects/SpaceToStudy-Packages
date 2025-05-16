@@ -105,8 +105,8 @@ const InputFieldTemplate = (args: Omit<InputFieldProps, "ref">) => {
       onChange={(e) => setValue(e.target.value)}
       onClear={handleClearInput}
       onKeyDown={handleKeyDown}
-      value={value}
       ref={inputRef}
+      value={value}
     />
   );
 };

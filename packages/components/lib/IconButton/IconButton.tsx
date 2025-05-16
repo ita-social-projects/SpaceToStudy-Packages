@@ -79,10 +79,10 @@ const IconButton = forwardRef<HTMLButtonElement, S2SIconButtonProps>(
 
     return (
       <MuiIconButton
-        ref={ref}
         className={classNamesContainerIconBG}
         disabled={loading || disabled}
         onClick={onClick}
+        ref={ref}
         {...props}
       >
         {buttonContent}

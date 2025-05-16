@@ -218,11 +218,11 @@ describe('Menu Component', () => {
     test('should initialize internalToggledItemsTitles with initially toggled items when allowToggleMultipleItems is true', () => {
         render(
             <Menu
-                anchorEl={anchor}
-                setAnchorEl={() => {}}
-                menuItems={internalToggledMenuItems}
                 allowToggleMultipleItems
+                anchorEl={anchor}
+                menuItems={internalToggledMenuItems}
                 removeAllItemsTitle=""
+                setAnchorEl={() => {}}
             />
         )
 
@@ -235,12 +235,12 @@ describe('Menu Component', () => {
 
         render(
             <Menu
-                anchorEl={anchor}
-                setAnchorEl={() => {}}
-                menuItems={onToggleItemsChangeItems}
                 allowToggleMultipleItems
+                anchorEl={anchor}
+                menuItems={onToggleItemsChangeItems}
                 onToggleItemsChange={handleToggle}
                 removeAllItemsTitle=""
+                setAnchorEl={() => {}}
             />
         )
 
@@ -252,11 +252,11 @@ describe('Menu Component', () => {
     test('should update internalToggledItemsTitles when toggled and no onToggleItemsChange is provided', () => {
         render(
             <Menu
-                anchorEl={anchor}
-                setAnchorEl={() => {}}
-                menuItems={menuItem}
                 allowToggleMultipleItems
+                anchorEl={anchor}
+                menuItems={menuItem}
                 removeAllItemsTitle=""
+                setAnchorEl={() => {}}
             />
         )
 
@@ -278,9 +278,9 @@ describe('Menu Component', () => {
         render(
             <Menu
                 anchorEl={anchor}
-                setAnchorEl={setAnchorEl}
                 menuItems={menuItems}
                 removeAllItemsTitle=""
+                setAnchorEl={setAnchorEl}
             />
         )
 
