@@ -1,0 +1,42 @@
+{
+  "name": "@s2s-packages/eslint-config",
+  "version": "0.0.2",
+  "description": "Shared ESLint configuration for S2S projects, including frontend and backend rules.",
+  "author": "Mike-Popovych <volt250719888@gmail.com>",
+  "homepage": "https://github.com/ita-social-projects/SpaceToStudy-Packages#readme",
+  "license": "ISC",
+  "main": "index.mjs",
+  "peerDependencies": {
+    "@eslint/compat": "^1.2.9",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.26.0",
+    "@tanstack/eslint-plugin-query": "^5.74.7",
+    "@typescript-eslint/eslint-plugin": "^8.32.1",
+    "@typescript-eslint/parser": "^8.32.1",
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-storybook": "^0.12.0",
+    "eslint-plugin-testing-library": "^7.2.0",
+    "eslint-plugin-typescript": "^0.14.0",
+    "eslint-plugin-vitest-globals": "^1.5.0",
+    "globals": "^16.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ita-social-projects/SpaceToStudy-Packages.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:check": "eslint . --ext .js,.ts,.tsx,.jsx",
+    "prepublishOnly": "npm run lint"
+  },
+  "bugs": {
+    "url": "https://github.com/ita-social-projects/SpaceToStudy-Packages/issues"
+  }
+}

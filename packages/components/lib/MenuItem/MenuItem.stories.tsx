@@ -128,44 +128,44 @@ export const All: Story = {
             }}
         >
             <MenuItem
-                title="Assignment"
                 onClick={() => alert('Item "Default" was clicked.')}
+                title="Assignment"
             />
             <MenuItem
-                title="Assignment"
                 graphics={<EditRounded />}
                 onClick={() => alert('Item "With Graphics" was clicked.')}
+                title="Assignment"
             />
             <MenuItem
-                title="Assignment"
                 graphics={<Checkbox />}
                 onClick={() => alert('Item "With Checkbox" was clicked.')}
+                title="Assignment"
             />
             <MenuItem
-                title="Assignment"
-                graphics={<EditRounded />}
                 additionalInfo="Due in 2 days"
                 density={2}
-                onClick={() => alert('Item "With Additional Info" was clicked.')}
-            />
-            <MenuItem
-                title="Assignment"
                 graphics={<EditRounded />}
-                isDropdown={true}
-                onClick={() => alert('Imagine dropdown was expanded.')}
+                onClick={() => alert('Item "With Additional Info" was clicked.')}
+                title="Assignment"
             />
             <MenuItem
+                graphics={<EditRounded />}
+                isDropdown
+                onClick={() => alert('Imagine dropdown was expanded.')}
                 title="Assignment"
+            />
+            <MenuItem
                 graphics={<EditRounded />}
                 onClick={() => alert('Item "With Remove" was clicked.')}
                 onRemove={() => alert('Imagine this item was removed')}
+                title="Assignment"
             />
             <MenuItem
-                title="Assignment"
-                graphics={<EditRounded />}
                 alignVariant="center"
                 colorVariant={MenuItemColorVariant.Secondary}
+                graphics={<EditRounded />}
                 onClick={() => alert('Item "Colored Menu Item" was clicked.')}
+                title="Assignment"
             />
         </div>
     ),

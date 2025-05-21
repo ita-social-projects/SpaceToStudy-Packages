@@ -77,8 +77,8 @@ describe('InputField ', () => {
       <InputField
         onChange={() => {}}
         placeholder={placeholderText}
+        search
         value=""
-        search={true}
       />
     );
 
